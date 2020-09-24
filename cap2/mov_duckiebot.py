@@ -65,8 +65,10 @@ while True:
 
     ### AGREGAR MÁS COMPORTAMIENTOS ###
 
-
-
+    #Doblar a la derecha (?) al apretar la tecla z
+    if key == ord('z'):
+        action = np.array([0.0,0.4])
+    
     # Se ejecuta la acción definida anteriormente y se retorna la observación (obs),
     # la evaluación (reward), etc
     obs, reward, done, info = env.step(action)
