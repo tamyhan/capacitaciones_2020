@@ -65,9 +65,13 @@ while True:
 
     ### AGREGAR MÁS COMPORTAMIENTOS ###
 
-    #Doblar a la derecha (?) al apretar la tecla z
-    if key == ord('z'):
+    #Girar hacia la izquierda al apretar la tecla a
+    if key == ord('a'):
         action = np.array([0.0,0.4])
+        
+    #Avanzar y doblar a la derecha al apretar la tecla e     
+    if key == ord('e'):
+        action = np.array([0.5,-0.5])
     
     # Se ejecuta la acción definida anteriormente y se retorna la observación (obs),
     # la evaluación (reward), etc
