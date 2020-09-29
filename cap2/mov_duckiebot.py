@@ -68,10 +68,24 @@ while True:
     #Girar hacia la izquierda al apretar la tecla a
     if key == ord('a'):
         action = np.array([0.0,0.4])
+
+    #Girar hacia la derecha al apretar la tecla d
+     if key == ord('d'):
+        action = np.array([0.0,-0.4]) 
         
     #Avanzar y doblar a la derecha al apretar la tecla e     
     if key == ord('e'):
         action = np.array([0.5,-0.5])
+
+    #Avanzar y doblar a la izquierda al apretar la tecla q     
+    if key == ord('q'):
+        action = np.array([0.5,0.5])
+
+    #Retroceder recto al apretar la tecla s
+    if key == ord('s'):
+        action = np.array([-0.44, 0.0])    
+
+    #Avanzar 
     
     # Se ejecuta la acción definida anteriormente y se retorna la observación (obs),
     # la evaluación (reward), etc
