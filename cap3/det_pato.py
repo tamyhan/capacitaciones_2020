@@ -60,8 +60,8 @@ if __name__ == '__main__':
 
     # Parametros para el detector de patos
     # Se debe encontrar el rango apropiado
-    lower_yellow = np.array([15, 109, 160])
-    upper_yellow = np.array([40, 255, 255])
+    lower_yellow = np.array([15, 250, 178])
+    upper_yellow = np.array([26, 255, 255])
     min_area = 2500
 
     while True:
@@ -102,9 +102,9 @@ if __name__ == '__main__':
         # Esto corresponde a hacer un Opening
         # https://docs.opencv.org/trunk/d9/d61/tutorial_py_morphological_ops.html
         #Operacion morfologica erode
-
+        #image_final = cv2.erode(image_filt, kernel, iterations = 1)
         #Operacion morfologica dilate
-
+        image_final = cv2.dilate(image_filt, kernel, iterations = 1)
 
         # Busca contornos de blobs
         # https://docs.opencv.org/trunk/d3/d05/tutorial_py_table_of_contents_contours.html
@@ -123,7 +123,7 @@ if __name__ == '__main__':
         # con los bounding boxes dibujados
         cv2.imshow('patos', cv2.cvtColor(obs, cv2.COLOR_RGB2BGR))
         # Se muestra en una ventana llamada "filtrado" la imagen filtrada
-        cv2.imshow('filtrado', cv2.cvtColor(image_filt, cv2.COLOR_RGB2BGR))
+        cv2.imshow('filtrado', cv2.cvtColor(image_final, cv2.COLOR_RGB2BGR))
 
 
     # Se cierra el environment y termina el programa
