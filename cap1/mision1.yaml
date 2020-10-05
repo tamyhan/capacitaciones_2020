@@ -1,0 +1,81 @@
+
+tiles:
+- [grass , curve_right/N , straight/W , curve_left/N , grass]
+- [curve_right/N   , curve_left/E   , grass    , curve_right/W   , curve_left/N]
+- [curve_right/W  , straight/W , straight/W          , straight/W , curve_left/E]
+
+
+objects:
+- kind: duckie
+  pos: [2.5, 1.5]
+  rotate: 270
+  height: 0.15
+  optional: true
+
+- kind: duckie
+  pos: [3.5, 2.8]
+  rotate: 180
+  height: 0.13
+  optional: true
+
+- kind: duckie
+  pos: [3.8, 2.8]
+  rotate: 180
+  height: 0.08
+  optional: true
+
+- kind: duckie
+  pos: [4.1, 2.8]
+  rotate: 180
+  height: 0.08
+  optional: true
+
+- kind: duckie
+  pos: [4.4, 2.8]
+  rotate: 180
+  height: 0.08
+  optional: true
+
+- kind: duckie
+  pos: [0.3, 0.8]
+  rotate: 0
+  height: 0.15
+  optional: true
+
+- kind: duckie
+  pos: [0.6, 0.8]
+  rotate: 180
+  height: 0.15
+  optional: true
+
+- kind: duckie
+  pos: [1,2]
+  rotate: 90
+  height: 0.08
+  optional: true
+
+- kind: tree
+  pos: [0.1, 0.1]
+  rotate: 0
+  height: 0.5
+  optional: true
+
+- kind: tree
+  pos: [0.5, 0.1]
+  rotate: 0
+  height: 0.5
+  optional: true
+
+- kind: tree
+  pos: [0.9, 0.1]
+  rotate: 0
+  height: 0.5
+  optional: true
+
+- kind: olaf
+  pos: [4.5, 0.5]
+  rotate: 0
+  height: 0.2
+  optional: true
+
+tile_size: 0.585
