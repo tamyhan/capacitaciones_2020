@@ -70,7 +70,7 @@ while True:
         action = np.array([0.0,0.4])
 
     #Girar hacia la derecha al apretar la tecla d
-     if key == ord('d'):
+    if key == ord('d'):
         action = np.array([0.0,-0.4]) 
         
     #Avanzar y doblar a la derecha al apretar la tecla e     
